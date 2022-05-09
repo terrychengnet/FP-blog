@@ -1,0 +1,98 @@
+footer {
+  .footer-info-wrap {
+    background-color: $brown;
+    padding: 50px 0;
+  }
+
+  .footer-info {
+    color: $white;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+
+      span {
+        font-size: 4.2rem;
+      }
+    }
+  }
+
+  .shop-info {
+    margin-bottom: 42px;
+    padding-left: 30px;
+
+    .shop-name {
+      font-size: 3rem;
+      line-height: 1.1;
+    }
+
+    .shop-address,
+    .shop-opening-hours,
+    .shop-tel,
+    .shop-whatsapp,
+    .shop-email {
+      display: block;
+      position: relative;
+      font-size: 1.8rem;
+      color: $white;
+      margin-bottom: 15px;
+
+      &::before {
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 0;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 18px;
+      }
+    }
+
+    .shop-address {
+      &::before {
+        content: "\f3c5";
+      }
+    }
+
+    .shop-opening-hours {
+      &::before {
+        content: "\f1da";
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    .shop-tel {
+      &::before {
+        content: "\f095";
+      }
+    }
+
+    .shop-whatsapp {
+      &::before {
+        content: "\f232";
+        font-family: "Font Awesome 5 Brands";
+      }
+    }
+
+    .shop-email {
+      &::before {
+        content: "\f0e0";
+      }
+    }
+  }
+
+  .footer-map {
+    height: 100%;
+
+    iframe {
+      height: 400px;
+
+      @include media-breakpoint-up(md) {
+        height: 100%;
+      }
+    }
+  }
+}
