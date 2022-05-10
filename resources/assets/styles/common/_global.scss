@@ -11,11 +11,21 @@ h2,
 h3,
 h4,
 h5 {
+  color: $choco;
   font-weight: bold;
 }
 
+p {
+  color: $brown;
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
 a {
+  color: $choco;
+
   &:hover {
+    color: $choco;
     text-decoration: none;
   }
 }
@@ -25,7 +35,7 @@ a {
 }
 
 .wrap {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .no-gutters {

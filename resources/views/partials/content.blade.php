@@ -5,7 +5,7 @@ $cats = get_the_category();
 <article @php post_class() @endphp>
   <div class="article-wrap">
     <a href="{{ get_permalink() }}">
-    <div class="artcle-img" style="background-image:url('{!! get_the_post_thumbnail_url() !!}');">
+    <div class="article-img" style="background-image:url('{!! get_the_post_thumbnail_url() !!}');">
       <div class="cat-wrap">
         @php
           foreach ($cats as $key => $cat) {
